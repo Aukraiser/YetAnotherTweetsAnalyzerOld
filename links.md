@@ -8,5 +8,5 @@
 
 ## CentOS ##
 
-[Config LAMP env](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-centos-6)
+[Config LAMP env](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-centos-6)  
 [Open SSH connection on CentOS](https://www.centos.org/docs/5/html/Deployment_Guide-en-US/s1-openssh-server-config.html)
