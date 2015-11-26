@@ -36,11 +36,13 @@ $settings = array(
 );
 
 /*TODO: change depending on the data to retrieve*/
-$url = "https://api.twitter.com/1.1/statuses/user_timeline.json";
+//$url = "https://api.twitter.com/1.1/statuses/user_timeline.json";
+$url = "https://api.twitter.com/1.1/search/tweets.json";
 
 /*TODO: check methode de recupération*/
 $requestMethod = "GET";
 
+/*
 if (isset($_GET['user']))
 {
     $user = $_GET['user'];
@@ -49,8 +51,10 @@ else
 {
     $user = "lilbowsc";
 }
+*/
 
 /*TODO: Remove */
+/*
 if (isset($_GET['count']))
 {
     $count = $_GET['count'];
@@ -59,9 +63,11 @@ else
 {
     $count = 20;
 }
+*/
 
 /*TODO: change depending on the data to retrieve*/
-$getfield = "?screen_name=$user&count=$count";
+//$getfield = "?screen_name=$user&count=$count";
+$getfield = "?q=blaeblaebjkkzbekze";
 $twitter = new TwitterAPIExchange($settings);
 $string = json_decode($twitter->setGetfield($getfield)
                       ->buildOauth($url, $requestMethod)
